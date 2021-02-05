@@ -2,7 +2,12 @@ module github.com/edwardstudy/scheduler-plugin
 
 go 1.13
 
-require k8s.io/kubernetes v1.17.6
+require (
+	k8s.io/api v0.17.6
+	k8s.io/apimachinery v0.17.6
+	k8s.io/client-go v0.17.6
+	k8s.io/kubernetes v1.17.6
+)
 
 replace (
 	k8s.io/api => k8s.io/api v0.17.6
