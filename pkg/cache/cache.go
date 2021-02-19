@@ -8,7 +8,7 @@ import (
 // Plugin needs to pull utility periodically.
 
 type nodeUtilityCache struct {
-	// NewTTLStore
+	// NewThreadSafeStore
 	// - thread safe
 	// - key string, value interface{}
 	store cache.ThreadSafeStore
